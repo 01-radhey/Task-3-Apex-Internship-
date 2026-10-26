@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 3 - Quiz & API Fetcher</title>
+  <link rel="stylesheet" href="Task3.css">
+  <script src="Task3.js" defer></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">Task Manager Pro</div>
+    <ul class="nav-links">
+      <li><a href="#quiz-section">Quiz</a></li>
+      <li><a href="#api-section">API Fetcher</a></li>
+    </ul>
+  </nav>
+  <main class="main">
+    <div class="card" id="quiz-section">
+      <h2>Interactive JavaScript Quiz</h2>
+      <p class="description">Test your web development knowledge!</p>
+      <div class="quiz-container">
+        <div id="quiz-box">
+          <h3 id="question-text"></h3>
+          <div id="options-container" class="options-grid">
+          </div>
+        </div>
+        <div id="result-box" class="result-container" style="display: none;">
+          <h3>Quiz Completed! 🎉</h3>
+          <p id="score-text">Your Score: 0 / 3</p>
+          <button id="restart-btn" class="submit-btn">Restart Quiz</button>
+        </div>
+        
+        <button id="next-quiz-btn" class="submit-btn" style="margin-top: 15px; display: none;">Next Question ➔</button>
+      </div>
+    </div>
+
+    <div class="card" id="api-section">
+      <h2>Live API Data Fetcher</h2>
+      <p class="description">Fetch real-time data from a public API instantly.</p>
+      
+      <div class="api-box">
+        <div class="quote-display">
+          <p id="api-setup">Click the button below to load a live joke/quote!</p>
+          <h3 id="api-punchline"></h3>
+        </div>
+        <button id="fetch-btn" class="submit-btn">Fetch New Data 🚀</button>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
